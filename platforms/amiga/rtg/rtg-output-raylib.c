@@ -293,6 +293,8 @@ reinit_raylib:;
 
     rtg_scale_output(width, height);
 
+    force_filter_mode = 0;
+
     while (1) {
         if (rtg_on) {
             if (old_filter_mode != filter_mode) {
